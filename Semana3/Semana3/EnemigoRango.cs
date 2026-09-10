@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Grupo2Semana3
 {
-    internal class EnemigoRango : Program
+    internal class EnemigoRango : Enemy
     {
         protected float vida;
         protected float dano;
@@ -19,12 +19,18 @@ namespace Grupo2Semana3
         }
         public virtual float RecibirDanoEnemigoRango(float danoRecibido)
         {
-            return vida - danoRecibido;
+            float jugadordaño = vida - danoRecibido;
+            vida = jugadordaño;
         }
 
         public virtual float AtaquedeEnemigoRango(float dano)
         {
             return dano;
+        }
+
+        public virtual bool EstadoEnemigoRango()
+        {
+            return vida > 0;
         }
     }
 }
