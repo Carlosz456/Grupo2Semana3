@@ -30,6 +30,7 @@ namespace Grupo2Semana3
                 return dano;
             } else 
             {
+                balas - 1;
                 return 0;
             }
 
