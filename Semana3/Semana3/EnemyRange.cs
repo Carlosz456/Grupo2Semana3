@@ -25,8 +25,13 @@ namespace Grupo2Semana3
 
         public virtual float AtaquedeEnemigoRango(float dano)
         {
-            return dano;
-        }
+            if (balas > 0)
+            {
+                return dano;
+            } else 
+            {
+                return 0;
+            }
 
         public virtual bool EstadoEnemigoRango()
         {
