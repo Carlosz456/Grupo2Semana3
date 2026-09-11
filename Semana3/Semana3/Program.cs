@@ -10,6 +10,8 @@ namespace Semana3
     {
         static void Main(string[] args)
         {
+            Juego juego = new Juego();
+            juego.Start();
         }
     }
 }
