@@ -11,6 +11,11 @@ namespace Taller3Sem3
         protected float vida;
         protected float dmg;
 
+        public Player(float vida, float dmg)
+        {
+            this vida = vida;
+            this dmg = dmg;
+        }
         public virtual float RecibirDano(float dmgRecibido)
         {
             return vida - dmgRecibido;
