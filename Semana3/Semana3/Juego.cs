@@ -16,8 +16,8 @@ namespace Semana3
 
                 //El juego tiene una cantidad fija de enemigos instanciados
                 int cantidad_enemigos = 3;
-                int V_e = 70;
-                int D_e = 20;
+                float V_e = 70;
+                float D_e = 20;
                 List<Enemy> enemigos = new List<Enemy>();
 
                 for (int i = 0; i < (cantidad_enemigos); i++)
@@ -28,8 +28,8 @@ namespace Semana3
 
                 //El jugador debe poder asignar los datos que prefiera siempre y cuando la vida y el daño no superen 100
 
-                int V_j = 0;
-                int D_j = 0;
+                float V_j;
+                float D_j;
 
                 Console.WriteLine("Asigne vida:");
                 V_j = int.Parse(Console.ReadLine());
