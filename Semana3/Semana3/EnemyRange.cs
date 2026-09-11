@@ -17,13 +17,13 @@ namespace Grupo2Semana3
             this.dano = dano;
             this.balas = balas;
         }
-        public virtual float RecibirDanoEnemigoRango(float danoRecibido)
+        public override float RecibirDaño(float danoRecibido)
         {
             float jugadordaño = vida - danoRecibido;
             vida = jugadordaño;
         }
 
-        public virtual float AtaquedeEnemigoRango(float dano)
+        public override float CausarDaño(float dano)
         {
             if (balas > 0)
             {
@@ -34,7 +34,7 @@ namespace Grupo2Semana3
                 return 0;
             }
 
-        public virtual bool EstadoEnemigoRango()
+        public override bool EstadoEnemigo()
         {
             return vida > 0;
         }
