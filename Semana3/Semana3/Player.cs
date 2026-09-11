@@ -13,8 +13,8 @@ namespace Taller3Sem3
 
         public Player(float vida, float dmg)
         {
-            this vida = vida;
-            this dmg = dmg;
+            this.vida = vida;
+            this.dmg = dmg;
         }
         public virtual float RecibirDano(float dmgRecibido)
         {
