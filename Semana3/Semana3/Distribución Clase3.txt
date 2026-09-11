@@ -2,6 +2,6 @@ Distribución:
 Crear una clase jugador: Daniel Uribe / MjokHein 
 Crear una clase enemigo melee: Camila Morán / StephanieCamila 
 Crear una clase enemigo rango: Carlos Zárate / Carlosz456 
-Crear una clase juego: Mel Gonzales / HoneyVictor22 
+Crear una clase juego: Camila Morán / StephanieCamila 
 Diagrama: Jesús Paredes / jepq23 
 Clase padre Enemy: Darian Lezama / dLezamadsz 
