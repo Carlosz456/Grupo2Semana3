@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Grupo2Semana3
 {
-    internal class EnemyRange : Program
+    internal class EnemigoRango : Enemy
     {
         protected float vida;
         protected float dano;
@@ -17,14 +17,26 @@ namespace Grupo2Semana3
             this.dano = dano;
             this.balas = balas;
         }
-        public virtual float RecibirDanoEnemigoRango(float danoRecibido)
+        public override float RecibirDaño(float danoRecibido)
         {
-            return vida - danoRecibido;
+            float jugadordaño = vida - danoRecibido;
+            vida = jugadordaño;
         }
 
-        public virtual float AtaquedeEnemigoRango(float dano)
+        public override float CausarDaño(float dano)
         {
-            return dano;
+            if (balas > 0)
+            {
+                return dano;
+            } else 
+            {
+                balas - 1;
+                return 0;
+            }
+
+        public override bool EstadoEnemigo()
+        {
+            return vida > 0;
         }
     }
 }
