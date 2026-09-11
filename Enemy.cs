@@ -18,12 +18,12 @@ namespace semana_3
             this.dmg = dmg;
         }
 
-        public virtual float Attack()
+        public virtual float CausarDaño()
         {
             return dmg;
         }
 
-        public virtual void GetDamage(Player p)
+        public virtual void RecibirDaño(Player p)
         {
             //se le resta el daño que causa el jugador (cambiar nombres de variables si es necesario)
             hp -= p.dmg;
@@ -31,7 +31,7 @@ namespace semana_3
             IsDead();
         }
 
-        public virtual bool IsDead()
+        public virtual bool EstadoEnemigo()
         {
             if(hp <= 0)
             {
