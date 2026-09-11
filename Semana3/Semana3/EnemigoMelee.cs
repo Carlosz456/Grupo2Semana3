@@ -9,8 +9,8 @@ namespace Semana3
     class EnemigoMelee : Enemy
     {
         //El constructor debe recibir la vida que tiene y daño que puede causar
-        float vida;
-        float causarDaño;
+        protected float vida;
+        protected float causarDaño;
         public EnemigoMelee(float vida, float causarDaño)
         {
             this.vida = vida;
